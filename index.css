@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ecf0f5;
+
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+    color: rgb(18, 119, 31);
+  padding: 10px;
+  text-align: center;
+  text-shadow: 4px 4px 3px #84e00d;
+}
+form {
+  margin: 0 32%;
+}
+#search-title {
+    color:#3c6803;
+  text-align: center;
+  text-shadow: 2px 2px 2px #84e00d;
+}
+/*----------Search box part---------*/
+.search-box input {
+  width: 300px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 13px 13px 20px #a4a5a7, -13px -13px 20px #d7e9f7;
+}
+.search-box button {
+  height: 40px;
+  width: 100px;
+  font-size: 1rem;
+  font-weight: 800;
+  background-color: #e7e439;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ecf0f3;
+}
+.search-box button:hover {
+  background-color: #ecf003;
+}
+
+/*----------Search results part---------*/
+#output {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.anime-group {
+  padding: 10px 0;
+  background-image: linear-gradient(to right, #f5e504, #c29033);
+  color: #000;
+  height: auto;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 13px 13px 20px #a4a5a7, -13px -13px 20px #d7e9f7;
+  transition: 1s;
+}
+.anime-group:hover {
+  transform: scale(0.9);
+ 
+}
+.anime-group img {
+  height: 200px;
+  width: 280px;
+}
+.anime-group h4 {
+    color: rgb(11, 114, 139);
+  height: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.anime-group p {
+  font-size: 0.75rem;
+  margin-left: 10px;
+}
+
+/*--------Page responsive part---------*/
+@media screen and (max-width: 767px) {
+  form {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-box input {
+    width: 280px;
+  }
+  .search-box button {
+    width: 90px;
+    font-size: 0.9rem;
+  }
+  #output {
+    gap: 2rem;
+  }
+}
